@@ -5,20 +5,20 @@
 class GofsenCli < Formula
   desc "Gofsen CLI - Minimalist web API framework scaffolding for Go"
   homepage "https://github.com/Bakemono-san/gofsen"
-  version "1.2.8"
+  version "1.2.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Bakemono-san/gofsen/releases/download/v1.2.8/gofsen_1.2.8_darwin_amd64.tar.gz"
-      sha256 "6e1b206a3b530fede4a9f7ed2e1b578b41012ba0d03b57b39eacf5221e776db1"
+      url "https://github.com/Bakemono-san/gofsen/releases/download/v1.2.9/gofsen_1.2.9_darwin_amd64.tar.gz"
+      sha256 "dc1ae41bf405e97c8b081c4001f46e2ef1c44c9dd06ece582bf2f76c568cd477"
 
       def install
         bin.install "gofsen-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Bakemono-san/gofsen/releases/download/v1.2.8/gofsen_1.2.8_darwin_arm64.tar.gz"
-      sha256 "daeb072eac3eec8fa071be5777093ce18fe789353e41715b027e432c4f79ad15"
+      url "https://github.com/Bakemono-san/gofsen/releases/download/v1.2.9/gofsen_1.2.9_darwin_arm64.tar.gz"
+      sha256 "0dc6f9cead5bcd852cd78da3ef59307ffb7e3d8f09f06de24120afd9c2698e8d"
 
       def install
         bin.install "gofsen-cli"
@@ -28,15 +28,15 @@ class GofsenCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Bakemono-san/gofsen/releases/download/v1.2.8/gofsen_1.2.8_linux_amd64.tar.gz"
-      sha256 "aee7a1e76f9ad902e34e8ad469f726f6856d9847d9ae1958cf78fb44a02659ab"
+      url "https://github.com/Bakemono-san/gofsen/releases/download/v1.2.9/gofsen_1.2.9_linux_amd64.tar.gz"
+      sha256 "9f08bc1115f031795717467616560d1847546a40179a4f67804ee84ef7d7eead"
       def install
         bin.install "gofsen-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Bakemono-san/gofsen/releases/download/v1.2.8/gofsen_1.2.8_linux_arm64.tar.gz"
-      sha256 "7995039bb57942967ff0e0c084065f12ca9922a9154d5401921e7591df0db6bd"
+      url "https://github.com/Bakemono-san/gofsen/releases/download/v1.2.9/gofsen_1.2.9_linux_arm64.tar.gz"
+      sha256 "e6473eb44f4c00463284d5d8aa1fe4115fde8aa51318993da41d448b5a4d5c9d"
       def install
         bin.install "gofsen-cli"
       end
